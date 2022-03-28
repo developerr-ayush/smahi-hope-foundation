@@ -3,7 +3,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 10) {
     document.getElementById("navbar").style.top = "0px";
   } else {
     document.getElementById("navbar").style.top = "-20px";
@@ -23,7 +23,7 @@ function scrollFunction() {
   } else {
     document
       .getElementById("navbar")
-      .setAttribute("style", "position: static; boxShadow:0; top:-100px");
+      .setAttribute("style", "position: fixed; boxShadow:0; top:0px");
   }
 }
 
