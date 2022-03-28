@@ -1,0 +1,367 @@
+@media (min-width: 900px) {
+  #navbar {
+    menu {
+
+        // dropdown starts from here =============
+
+      .dropdown {
+        background-color: $white;
+        width: 200px;
+        position: absolute;
+        top: 150px;
+        left: 75%;
+        flex-direction: column;
+        align-items: flex-start;
+        opacity: 0;
+        visibility: hidden;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+          rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        transition: all 0.4s ease-in-out;
+
+      }
+
+        // dropdown ends here========================
+      .blog_links {
+        left: 80%;
+        
+      }
+     
+     //  hover efects----------------
+
+      #pages:hover {
+        .dropdown {
+          transform: translateY(-60px);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      // -------
+      #blog:hover {
+        .blog_links {
+          transform: translateY(-60px);
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    
+
+  }
+}
+}
+
+
+
+
+
+// media query-----------------------------
+
+@media (max-width: 900px) {
+  #home {
+
+  margin-top: -10px;
+  }
+
+ // navbar starts-----------
+#navbar {
+  background-color:$dark_grey;
+  position: relative;
+  height: 95px;
+        //  hamburger icon 
+     .container {
+  display: inline-block;
+
+}
+
+
+ // logo area
+  .logo {
+    width: 180px;
+ 
+  }
+  //  main menu
+    menu {
+    //   overflow: auto;
+    // overflow-y: scroll;
+    // overflow-x: scroll;
+      background-color: $dark_grey;
+
+      position: absolute;
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 81.2px;
+         padding: 1rem 4rem;
+        overflow: hidden;
+        z-index: 99;
+      
+      // menu item
+       #menu_item {
+        flex-direction: column;
+        align-items: flex-start;
+        width: inherit;
+        flex-direction: column;
+      
+        transition: all .3s ease-in-out;
+        overflow: hidden;
+        // height: 400px;
+        height: 0;
+        // padding: 0;
+
+      li{
+        width: inherit;
+        padding: 1rem 0;
+        border-bottom: 1px solid $grey;
+       
+      }
+   
+
+        // dropdown ============
+        .dropdown {
+          width: 100%;
+          margin-top: 1rem;
+          flex-direction: row;
+          transition: all 0.3s ease-in-out;
+          background-color: $white;
+          overflow: hidden;
+          padding: 0;
+          height: 0;
+
+
+          li{ padding:.9rem 1.2rem;}
+        }
+
+        .blog_links {
+           overflow: hidden;
+          height: 0;
+        }
+      }
+
+       #menu_bar:hover{
+             #menu_item{
+              //  transform: scale(2.2);
+              height: 250px;
+             }
+       }
+     
+    }
+        }
+
+      
+    }
+
+   
+  
+
+  
+
+      
+   
+ 
+  
+
+
+
+
+@media (max-width: 1000px) {
+  // abouts section  starts----
+  #about {
+    justify-content: center;
+    img {
+      width: 80%;
+    }
+    .about_right {
+      width: 100%;
+      height: auto;
+      padding: 4rem 5rem;
+      margin-left: 0;
+      justify-content: center;
+      text-align: center;
+      p {
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  // upcoming_events starts----------
+  #upcoming_events {
+    .inner {
+      .event_card {
+        width: 650px;
+        margin: 30px auto;
+
+        .event_right {
+          width: 50%;
+        }
+      }
+    }
+  }
+  // upcoming_events ends----------
+  // categary_area_sec starts ----
+  #categary_area_sec {
+    .inner {
+      padding: 1rem;
+    }
+  }
+  // categary_area_sec ends ----
+
+  // ---footer------------------
+  #footer {
+    // subscribe sec ---------
+    #subscribe {
+      margin: 0 auto;
+      text-align: center;
+
+      h2 {
+        color: $white;
+        width: 100%;
+      }
+      .input_side {
+        width: 100%;
+        .btn {
+          width: 115px;
+        }
+      }
+    }
+
+    .footer_left,
+    .footer_right {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+}
+
+// 768px-------------
+
+@media (max-width: 768px) {
+  *section {
+    padding: 2rem 1rem;
+  }
+
+  // home ------------
+  #home {
+    // tex area starts------------
+    .text_area {
+      width: 85%;
+    }
+  }
+  // home ends------------
+  // upcoming_events starts----------
+  #upcoming_events {
+    .inner {
+      .event_card {
+        width: 90%;
+        // margin: 30px auto;
+
+        .img_box {
+          width: 100%;
+        }
+
+        .event_right {
+          width: 100%;
+          text-align: center;
+          padding: 0.7rem 0 0;
+        }
+      }
+    }
+  }
+
+  // upcoming_events ends----------
+
+  // Voluteer section ends---------
+  // ---footer------------------
+  #footer {
+    // subscribe sec ---------
+    #subscribe {
+      .input_side {
+        input {
+          width: 100%;
+
+          margin-top: 2rem;
+        }
+        .btn {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+// 500px-------------
+
+@media (max-width: 500px) {
+  html {
+    font-size: 85%;
+  }
+
+  // home ------------
+  #home {
+    // tex area starts------------
+    .text_area {
+      .btn_area {
+        flex-direction: column;
+        .btn {
+          margin: 0.5rem;
+        }
+      }
+    }
+  }
+  // home ends------------
+
+  // abouts section ----
+  #about {
+    .about_right {
+      padding: 0.5rem;
+      box-shadow: none;
+    }
+  }
+
+  // ---footer------------------
+  #footer {
+    // footer main part starts---------------
+
+    .footer_left,
+    .footer_right {
+      h3 {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+      }
+    }
+    //----footer_left--------------------
+    .footer_left {
+      margin-top: 4rem;
+      .foot_mission,
+      .foot_links {
+        width: 100%;
+      }
+    }
+
+    // ---footer_right------------------
+
+    .footer_right {
+      margin-top: 2rem;
+      .foot_gallery,
+      .foot_contact {
+        width: 100%;
+      }
+
+      .foot_contact {
+        justify-content: left;
+        h3 {
+          padding-left: 0;
+        }
+        .icon {
+          flex-direction: column;
+          width: 15%;
+        }
+      }
+    }
+  }
+  // copyright sec -----------
+  .copyright_sec {
+    h3 {
+      font-size: 1rem;
+      padding: 0 0.5rem;
+    }
+  }
+}
