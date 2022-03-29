@@ -991,6 +991,7 @@ button:hover {
 
 #container h1 {
   padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 #container form input,
@@ -998,6 +999,11 @@ button:hover {
   width: 100%;
   margin: 0.5rem 0 1.5rem;
   padding: 0.7rem;
+  resize: none;
+}
+
+#container form .btn {
+  margin: auto;
 }
 
 #container form .name_field,
@@ -1020,28 +1026,28 @@ button:hover {
 #container form input::-webkit-input-placeholder,
 #container form textarea::-webkit-input-placeholder {
   font-size: 1em;
-  color: #43eBd8;
+  color: #0f1c27;
   opacity: 0.7;
 }
 
 #container form input:-ms-input-placeholder,
 #container form textarea:-ms-input-placeholder {
   font-size: 1em;
-  color: #43eBd8;
+  color: #0f1c27;
   opacity: 0.7;
 }
 
 #container form input::-ms-input-placeholder,
 #container form textarea::-ms-input-placeholder {
   font-size: 1em;
-  color: #43eBd8;
+  color: #0f1c27;
   opacity: 0.7;
 }
 
 #container form input::placeholder,
 #container form textarea::placeholder {
   font-size: 1em;
-  color: #43eBd8;
+  color: #0f1c27;
   opacity: 0.7;
 }
 
@@ -1051,5 +1057,11 @@ button:hover {
   border-color: #43eBd8;
   -webkit-box-shadow: 0 0 10px #43eBd8;
           box-shadow: 0 0 10px #43eBd8;
+}
+
+@media (max-width: 1000px) {
+  #about.contact img {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

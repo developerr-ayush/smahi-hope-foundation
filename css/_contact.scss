@@ -15,6 +15,7 @@
   }
   h1 {
     padding-bottom: 1.5rem;
+    text-align: center;
   }
 
   //   form----------
@@ -24,8 +25,11 @@
       width: 100%;
       margin: 0.5rem 0 1.5rem;
       padding: 0.7rem;
+      resize: none  ;
     }
-
+    .btn{
+      margin: auto;
+    }
     .name_field,
     .contact_field {
       width: 100%;
@@ -44,7 +48,7 @@
     input::placeholder,
     textarea::placeholder {
       font-size: 1em;
-      color: $primary_color;
+      color: $dark_blue;
       opacity: 0.7;
     }
 
@@ -53,6 +57,14 @@
       outline: none !important;
       border-color: $primary_color;
       box-shadow: 0 0 10px $primary_color;
+    }
+  }
+}
+
+@media (max-width:1000px) {
+  #about.contact{
+    img{
+      display: none;
     }
   }
 }
