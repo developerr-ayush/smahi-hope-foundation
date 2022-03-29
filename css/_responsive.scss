@@ -1,9 +1,7 @@
 @media (min-width: 900px) {
   #navbar {
     menu {
-
-        // dropdown starts from here =============
-
+      // dropdown starts from here =============
       .dropdown {
         background-color: $white;
         width: 200px;
@@ -17,16 +15,14 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
           rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
         transition: all 0.4s ease-in-out;
-
       }
 
-        // dropdown ends here========================
+      // dropdown ends here========================
       .blog_links {
         left: 80%;
-        
       }
-     
-     //  hover efects----------------
+
+      //  hover efects----------------
 
       #pages:hover {
         .dropdown {
@@ -43,125 +39,67 @@
           visibility: visible;
         }
       }
-    
-
+    }
   }
 }
-}
-
-
-
-
 
 // media query-----------------------------
 
 @media (max-width: 900px) {
   #home {
-
-  margin-top: -10px;
+    margin-top: -10px;
   }
 
- // navbar starts-----------
-#navbar {
-  background-color:$dark_grey;
-  position: relative;
-  height: 95px;
-        //  hamburger icon 
-     .container {
-  display: inline-block;
+  // navbar starts-----------
+  #navbar {
+    background-color: $dark_grey;
+    position: relative;
+    height: 95px;
+    //  hamburger icon
+    .container {
+      display: inline-block;
+    }
 
-}
-
-
- // logo area
-  .logo {
-    width: 180px;
- 
-  }
-  //  main menu
+    // logo area
+    .logo {
+      width: 180px;
+    }
+    //  main menu
     menu {
-    //   overflow: auto;
-    // overflow-y: scroll;
-    // overflow-x: scroll;
+  
       background-color: $dark_grey;
-
       position: absolute;
       width: 100%;
       left: 0;
       right: 0;
       top: 81.2px;
-         padding: 1rem 4rem;
-        overflow: hidden;
-        z-index: 99;
-      
+      padding: 1rem 4rem;
+      overflow: hidden;
+      z-index: 99;
+
       // menu item
-       #menu_item {
+      #menu_item {
         flex-direction: column;
         align-items: flex-start;
         width: inherit;
         flex-direction: column;
-      
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
         overflow: hidden;
-        // height: 400px;
         height: 0;
-        // padding: 0;
-
-      li{
-        width: inherit;
-        padding: 1rem 0;
-        border-bottom: 1px solid $grey;
-       
-      }
-   
-
-        // dropdown ============
-        .dropdown {
-          width: 100%;
-          margin-top: 1rem;
-          flex-direction: row;
-          transition: all 0.3s ease-in-out;
-          background-color: $white;
-          overflow: hidden;
-          padding: 0;
-          height: 0;
-
-
-          li{ padding:.9rem 1.2rem;}
-        }
-
-        .blog_links {
-           overflow: hidden;
-          height: 0;
-        }
-      }
-
-       #menu_bar:hover{
-             #menu_item{
-              //  transform: scale(2.2);
-              height: 250px;
-             }
-       }
      
-    }
+    
+        li {
+          width: inherit;
+          padding: 1rem 0;
+          border-bottom: 1px solid $grey;
         }
-
-      
     }
-
-   
-  
-
-  
-
-      
-   
- 
-  
-
-
-
-
+    #menu_item li:last-child {
+      border-bottom: none;
+    }
+  }
+}
+}
 @media (max-width: 1000px) {
   // abouts section  starts----
   #about {
@@ -293,7 +231,14 @@
   html {
     font-size: 85%;
   }
+   #navbar {
+     padding: 1rem 1.5rem;
 
+     menu{
+       padding: 1rem 1.8rem;
+     }
+ 
+  }
   // home ------------
   #home {
     // tex area starts------------
@@ -315,6 +260,35 @@
       box-shadow: none;
     }
   }
+
+  // Voluteer section stars------
+
+  #voluteer_sec {
+    text-align: center;
+    .inner {
+      .voluteer_card {
+        p {
+          font-size: 1.2rem;
+        }
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        // links----
+        .links {
+          width: 75%;
+          // padding: 1.5rem 2rem;
+          transition: 0.5s;
+          a {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Voluteer section ends---------
 
   // ---footer------------------
   #footer {
@@ -365,3 +339,5 @@
     }
   }
 }
+
+

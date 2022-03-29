@@ -37,7 +37,12 @@ $blue: #0c151d;
   width: 100%;
   padding: 3.5rem 4rem;
 }
-
+@media (max-width:400px) {
+  * section {
+  padding: 2rem ;
+  
+}
+}
 html {
   scroll-behavior: smooth;
   font-size: 95%;
@@ -112,7 +117,7 @@ button:hover {
 }
 // -------------------------------
 @mixin samepro {
-  flex: 1 1 260px;
+  flex: 1 1 300px;
   margin: 15px;
   padding: 30px;
 }
@@ -228,8 +233,12 @@ button:hover {
     url(../img/home.png) no-repeat scroll center top;
   background-size: cover;
   padding: 27% 0%;
-
-
+  @media (max-width:767px) {
+    &{
+      padding: 100% 0%;
+      background-position: center;
+    }
+}
   // tex area starts------------
 
   .text_area {
@@ -366,7 +375,7 @@ button:hover {
   text-align: center;
   .inner {
     .event_card {
-      width: 410px;
+      width: 460px;
       margin: 30px 15px;
       overflow: hidden;
 
@@ -662,3 +671,4 @@ button:hover {
 }
 @import "responsive";
 @import "hamburger";
+@import "contact";

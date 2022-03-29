@@ -1,3 +1,5 @@
+// window on scroll function  for sticky navbar----
+
 window.onscroll = function () {
   scrollFunction();
 };
@@ -10,16 +12,15 @@ function scrollFunction() {
   }
 }
 
-//   window.onscroll = function() {scrollFunction()};
-
-let nav =  document.getElementById("navbar");
+let nav = document.getElementById("navbar");
 function scrollFunction() {
-  if ( document.body.scrollTop > 200 ||  document.documentElement.scrollTop > 200 ) {
+  if (
+    document.body.scrollTop > 200 ||
+    document.documentElement.scrollTop > 200
+  ) {
     nav.setAttribute("style", "position: fixed; top:0; left:0; right:0;");
     nav.style.boxShadow = "0 5px 20px 0 rgba(0, 0, 0, .2)";
     nav.style.backgroundColor = "#121212";
-   
-
   } else {
     document
       .getElementById("navbar")
@@ -27,94 +28,103 @@ function scrollFunction() {
   }
 }
 
-// --------------------------
+
+// hamburger menu function--------------------------
 
 function myFunction(x) {
   x.classList.toggle("change");
 }
 
-
-
-
 // toggle menu =============================
-let hemIcon = document.getElementById("ham_icon");
-  let menuItem = document.getElementById("menu_item"); 
+let hamIcon = document.getElementById("ham_icon");
+let menuItem = document.getElementById("menu_item"); 
 
   
-document.getElementById("ham_icon").addEventListener("click", function () {
-  if (menuItem.style.height === "360px") {
+hamIcon.addEventListener("click", function () {
+  if (menuItem.style.height === "300px") {
     menuItem.style.height = "0";
   } else {
-    menuItem.style.height = "360px";
+    menuItem.style.height = "300px";
   }
 });
 
+// hide menu if clicking out side of it
   window.addEventListener("click", function (e) {
-    if (
-      !document.getElementById("menu_item").contains(e.target) &&
-      !document.getElementById("ham_icon").contains(e.target)
-    ) {
-      document.getElementById("menu_item").style.height = "0";
+    if (!menuItem.contains(e.target) && 
+        !hamIcon.contains(e.target)) {
+     menuItem.style.height = "0";
     }
   });
 
-
- 
+// hide menu after clicking links
+  menuItem.addEventListener("click", function(){
+ this.style.height = "0";
+  });
  
 // dropdown===
-document.getElementById("pages").addEventListener("click", function(){
+// document.getElementById("pages").addEventListener("click", function(){
 
-   let dropdown = document.querySelector(".dropdown");
+//    let dropdown = document.querySelector(".dropdown");
 
-  if (dropdown.style.height === "128px") {
-    dropdown.style.height = "0";
-     dropdown.style.padding = "0";
-     dropdown.style.marginTop = "0";
+//   if (dropdown.style.height === "128px") {
+//     dropdown.style.height = "0";
+//      dropdown.style.padding = "0";
+//      dropdown.style.marginTop = "0";
      
-  } else {
-       dropdown.style.height = "128px";
-        //  dropdown.style.padding = ".5rem";
-           dropdown.style.marginTop = ".7rem";
-             menuItem.style.height = "auto";     
-  }
+//   } else {
+//        dropdown.style.height = "128px";
+//         //  dropdown.style.padding = ".5rem";
+//            dropdown.style.marginTop = ".7rem";
+//              menuItem.style.height = "auto";     
+//   }
 
-    window.addEventListener("click", function (e) {
-      if (
-        !document.querySelector(".dropdown").contains(e.target) &&
-        !document.getElementById("pages").contains(e.target)
-      ) {
-        document.querySelector(".dropdown").style.height = "0";
-         document.querySelector(".dropdown").style.padding = "0";
-         document.querySelector(".dropdown").style.marginTop = "0";
-      }
-    });
-})
+//     window.addEventListener("click", function (e) {
+//       if (
+//         !document.querySelector(".dropdown").contains(e.target) &&
+//         !document.getElementById("pages").contains(e.target)
+//       ) {
+//         document.querySelector(".dropdown").style.height = "0";
+//          document.querySelector(".dropdown").style.padding = "0";
+//          document.querySelector(".dropdown").style.marginTop = "0";
+//       }
+//     });
+// })
 
 // blog
 
-document.getElementById("blog").addEventListener("click", function () {
-  let blogLinks = document.querySelector(".blog_links");
+// document.getElementById("blog").addEventListener("click", function () {
+//   let blogLinks = document.querySelector(".blog_links");
 
 
-  if (blogLinks.style.height === "80px") {
-    blogLinks.style.height = "0";
-      blogLinks.style.marginTop = "0";
-  } else {
-      blogLinks.style.height = "80px";
-      blogLinks.style.marginTop = ".7rem";
-       menuItem.style.height = "auto";
-  }
+//   if (blogLinks.style.height === "80px") {
+//     blogLinks.style.height = "0";
+//       blogLinks.style.marginTop = "0";
+//   } else {
+//       blogLinks.style.height = "80px";
+//       blogLinks.style.marginTop = ".7rem";
+//        menuItem.style.height = "auto";
+//   }
 
 
-     window.addEventListener("click", function (e) {
-       if (
-         !document.querySelector(".blog_links").contains(e.target) &&
-         !document.getElementById("blog").contains(e.target)
-       ) {
-         document.querySelector(".blog_links").style.height = "0";
-          document.querySelector(".blog_links").style.marginTop = "0";
-       }
-     });
-});
+//      window.addEventListener("click", function (e) {
+//        if (
+//          !document.querySelector(".blog_links").contains(e.target) &&
+//          !document.getElementById("blog").contains(e.target)
+//        ) {
+//          document.querySelector(".blog_links").style.height = "0";
+//           document.querySelector(".blog_links").style.marginTop = "0";
+//        }
+//      });
+// });
 
 
+// document.getElementById("event").addEventListener("mouseover", function(){
+//   document.querySelectorAll(".btn").style.background = "red";
+
+// });
+
+// let btn = document.querySelectorAll(".btn");
+
+// (for (let i ))
+
+// console.log(btn);
