@@ -1,0 +1,174 @@
+#joinUs_container {
+  width: 100%;
+  text-align: center;
+  background-color: rgb(211, 214, 212);
+ 
+*section{
+  padding: 0;
+}
+
+  .inner {
+    text-align: left;
+    h2 {
+      font-size: 2rem;
+      padding: 1rem 0;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      padding: 1rem 0;
+      width: 100%;
+      font-weight: 700;
+    }
+
+    // first form----------
+    form {
+      width: 100%;
+      position: relative;
+      // img
+       img{
+         width: 70%; position: 
+         absolute; right: 0%;
+          top: 0;}
+
+      // name field
+    .name_field {
+      width: 45%;
+      z-index: 1;
+      margin-top:25px;
+      background-color: $white;
+      padding: 2rem;
+       -webkit-box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
+    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
+  box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
+    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
+
+        input,
+        textarea {
+          width: 100%;
+          margin: 0.5rem 0 1.5rem;
+          padding: 0.7rem;
+          resize: none;
+        }
+        .btn {
+          margin: auto;
+        }
+
+        input::placeholder {
+          font-size: 1em;
+          color: $dark_blue;
+          opacity: 0.7;
+        }
+
+        input:focus {
+          outline: none !important;
+          border-color: $primary_color;
+          box-shadow: 0 0 10px $primary_color;
+        }
+      }
+
+
+      // important input attributes change for whole page -------------------------------------
+      textarea::placeholder {
+        font-size: 1em;
+        color: $dark_blue;
+        opacity: 0.7;
+      }
+
+      textarea:focus {
+        outline: none !important;
+        border-color: $primary_color;
+        box-shadow: 0 0 10px $primary_color;
+      }
+      input {
+        cursor: pointer !important;
+      }
+      .radio_btn {
+        width: 7%;
+      }
+      label {
+        width: 93%;
+        font-weight: 400;
+      }
+
+      // radio field
+      .radio_field {
+        flex-direction: row;
+        align-items: flex-start;
+        label{
+          margin-bottom: .7rem;
+        }
+      }
+
+      // radio_field_main
+
+      .radio_field_main{
+      width: 70%;
+      margin-top: 2rem;
+      // margin-left: 25%;
+z-index: 1;
+      background-color: $white;
+      padding: 2rem;
+       -webkit-box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
+    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
+  box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
+    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
+      }
+    }
+    // important input attributes change ends---------------------------
+  }
+
+  // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  // second part---------
+  #second_part {
+    width: 100%;
+    // background-color:$grey;
+    margin: 50px 0;
+    text-align: left;
+
+.second_form_input{
+  width: 45%;
+   margin: 0.5rem 0 1.5rem;
+          padding: 0.7rem;
+}
+    
+    .second_form_input::placeholder {
+          font-size: 1em;
+          color: $dark_blue;
+          opacity: 0.7;
+          
+        }
+
+          .second_form_input:focus {
+          outline: none !important;
+          border-color: $primary_color;
+          box-shadow: 0 0 10px $primary_color;
+        }
+  
+    .experience {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    // submit_file_sec
+
+    .submit_file_sec {
+      flex-direction: row;
+      align-items: baseline;
+      // background-color: rgb(28, 50, 50);
+
+      .first{
+        width: 45%;
+      }
+       .second{
+        width: 25%;
+
+        input{width: 100%; background-color: green; cursor: pointer;}
+      }
+      .third{
+        width: 15%;
+      }
+    }
+
+  }
+}

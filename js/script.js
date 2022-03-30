@@ -60,71 +60,16 @@ hamIcon.addEventListener("click", function () {
   menuItem.addEventListener("click", function(){
  this.style.height = "0";
   });
- 
-// dropdown===
-// document.getElementById("pages").addEventListener("click", function(){
-
-//    let dropdown = document.querySelector(".dropdown");
-
-//   if (dropdown.style.height === "128px") {
-//     dropdown.style.height = "0";
-//      dropdown.style.padding = "0";
-//      dropdown.style.marginTop = "0";
-     
-//   } else {
-//        dropdown.style.height = "128px";
-//         //  dropdown.style.padding = ".5rem";
-//            dropdown.style.marginTop = ".7rem";
-//              menuItem.style.height = "auto";     
-//   }
-
-//     window.addEventListener("click", function (e) {
-//       if (
-//         !document.querySelector(".dropdown").contains(e.target) &&
-//         !document.getElementById("pages").contains(e.target)
-//       ) {
-//         document.querySelector(".dropdown").style.height = "0";
-//          document.querySelector(".dropdown").style.padding = "0";
-//          document.querySelector(".dropdown").style.marginTop = "0";
-//       }
-//     });
-// })
-
-// blog
-
-// document.getElementById("blog").addEventListener("click", function () {
-//   let blogLinks = document.querySelector(".blog_links");
 
 
-//   if (blogLinks.style.height === "80px") {
-//     blogLinks.style.height = "0";
-//       blogLinks.style.marginTop = "0";
-//   } else {
-//       blogLinks.style.height = "80px";
-//       blogLinks.style.marginTop = ".7rem";
-//        menuItem.style.height = "auto";
-//   }
+  // function for input type range
 
-
-//      window.addEventListener("click", function (e) {
-//        if (
-//          !document.querySelector(".blog_links").contains(e.target) &&
-//          !document.getElementById("blog").contains(e.target)
-//        ) {
-//          document.querySelector(".blog_links").style.height = "0";
-//           document.querySelector(".blog_links").style.marginTop = "0";
-//        }
-//      });
-// });
-
-
-// document.getElementById("event").addEventListener("mouseover", function(){
-//   document.querySelectorAll(".btn").style.background = "red";
-
-// });
-
-// let btn = document.querySelectorAll(".btn");
-
-// (for (let i ))
-
-// console.log(btn);
+  $(function () {
+    $(".slider").on("input change", function () {
+      $(this).next($(".slider_label")).html(this.value);
+    });
+    $(".slider_label").each(function () {
+      var value = $(this).prev().attr("value");
+      $(this).html(value);
+    });
+  });
