@@ -39,7 +39,7 @@ h1,
 h2,
 h3,
 h4 {
-  color: #151516ee;
+  color: rgba(21, 21, 22, 0.9333333333);
 }
 
 h1 {
@@ -78,7 +78,7 @@ span {
   width: 170px;
   height: 45px;
   border: none;
-  background: #43eBd8;
+  background: #2fc3b4;
   color: #ffffff;
   transition: 0.5s;
   margin: 2rem 0.3rem;
@@ -92,7 +92,7 @@ span {
 }
 
 button:hover {
-  border: 1px solid #43eBd8;
+  border: 1px solid #2fc3b4;
   background: none;
   color: #121212;
 }
@@ -139,10 +139,10 @@ button:hover {
   font-weight: normal;
 }
 #navbar menu .active {
-  color: #43eBd8;
+  color: #2fc3b4;
 }
 #navbar menu a:hover {
-  color: #43eBd8;
+  color: #2fc3b4;
 }
 #navbar menu .dropdown li {
   width: inherit;
@@ -151,10 +151,10 @@ button:hover {
 }
 #navbar menu .dropdown li a {
   font-size: 0.8rem;
-  color: #151516ee;
+  color: rgba(21, 21, 22, 0.9333333333);
 }
 #navbar menu .dropdown li:hover {
-  background-color: #43eBd8;
+  background-color: #2fc3b4;
 }
 #navbar menu .dropdown li:hover a {
   color: #ffffff;
@@ -213,7 +213,7 @@ button:hover {
   margin: 15px;
   padding: 30px;
   flex-direction: column;
-  background-color: #f3f1f1b1;
+  background-color: rgba(243, 241, 241, 0.6941176471);
   cursor: pointer;
   transition: all 1s;
 }
@@ -273,7 +273,7 @@ button:hover {
 }
 #featured_causes .inner .featured_card .featured_card_inner span,
 #featured_causes .inner .featured_card .featured_card_inner i {
-  color: #43eBd8;
+  color: #2fc3b4;
   margin-right: 7px;
 }
 #featured_causes .inner .featured_card:hover {
@@ -315,7 +315,7 @@ button:hover {
   transform: scale(1.2);
 }
 #upcoming_events .inner .event_card:hover .event_right:hover h3 {
-  color: #43eBd8;
+  color: #2fc3b4;
 }
 #upcoming_events button:hover {
   border: none;
@@ -363,17 +363,17 @@ button:hover {
   box-shadow: rgba(88, 87, 87, 0.25) 0px 14px 28px, rgba(87, 86, 86, 0.22) 0px 10px 10px;
 }
 #voluteer_sec .inner .voluteer_card:hover h3 {
-  color: #43eBd8;
+  color: #2fc3b4;
   transition: 0.5s;
 }
 #voluteer_sec .inner .voluteer_card:hover a {
-  background-color: #43eBd8;
+  background-color: #2fc3b4;
   color: #ffffff;
   border: none;
 }
 
 #categary_area_sec {
-  background-color: #43eBd8;
+  background-color: #2fc3b4;
   text-align: center;
 }
 #categary_area_sec .inner {
@@ -409,7 +409,7 @@ button:hover {
   padding: 2rem 0;
 }
 #story_sec .inner .box:hover h3 {
-  color: #43eBd8;
+  color: #2fc3b4;
 }
 
 #footer {
@@ -442,7 +442,7 @@ button:hover {
 }
 #footer #subscribe .input_side .btn {
   width: 20%;
-  color: #151516ee;
+  color: rgba(21, 21, 22, 0.9333333333);
 }
 #footer .footer_left,
 #footer .footer_right {
@@ -471,7 +471,7 @@ button:hover {
   text-transform: capitalize;
 }
 #footer .footer_left .foot_links li a:hover {
-  color: #43eBd8;
+  color: #2fc3b4;
 }
 #footer .footer_right .foot_gallery {
   width: 37%;
@@ -497,7 +497,7 @@ button:hover {
   height: 190px;
 }
 #footer .footer_right .foot_contact .icon a {
-  background-color: #43eBd8;
+  background-color: #2fc3b4;
   padding: 0.5rem;
   border-radius: 50%;
 }
@@ -510,7 +510,7 @@ button:hover {
   align-items: flex-start;
 }
 #footer .footer_right .foot_contact .cont_details span {
-  color: #43eBd8;
+  color: #2fc3b4;
   text-transform: capitalize;
 }
 #footer .footer_right .foot_contact .cont_details li {
@@ -529,10 +529,13 @@ button:hover {
   color: #ffffff;
 }
 .copyright_sec .fa-heart {
-  color: #43eBd8;
+  color: #2fc3b4;
 }
 
 @media (min-width: 900px) {
+  #navbar menu {
+    width: 57%;
+  }
   #navbar menu .dropdown {
     background-color: #ffffff;
     width: 200px;
@@ -767,10 +770,12 @@ button:hover {
   display: none;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 30px;
   height: 3px;
-  background-color: #fbfbfb;
+  background-color: rgb(251, 251, 251);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -847,8 +852,8 @@ button:hover {
 #container form input:focus,
 #container form textarea:focus {
   outline: none !important;
-  border-color: #43eBd8;
-  box-shadow: 0 0 10px #43eBd8;
+  border-color: #2fc3b4;
+  box-shadow: 0 0 10px #2fc3b4;
 }
 
 @media (max-width: 1000px) {
@@ -859,10 +864,22 @@ button:hover {
 #joinUs_container {
   width: 100%;
   text-align: center;
-  background-color: #d3d6d4;
+  background-color: #f0f0f0;
 }
 #joinUs_container * section {
   padding: 0;
+}
+#joinUs_container .border_top {
+  border-top: 7px solid #EEB609;
+  border-radius: 25px 0 15px 0;
+  margin-top: 25px;
+  background-color: #ffffff;
+  padding: 2rem;
+  transition: 0.5s;
+}
+#joinUs_container .border_top:hover {
+  border-color: #2fc3b4;
+  box-shadow: rgba(91, 90, 90, 0.4) 10px 10px 15px 3px, rgba(76, 76, 76, 0.4) 10px 4px 6px -10px;
 }
 #joinUs_container .inner {
   text-align: left;
@@ -873,58 +890,14 @@ button:hover {
   width: 100%;
 }
 #joinUs_container .inner h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 1rem 0;
   width: 100%;
-  font-weight: 700;
+  font-weight: 600;
 }
 #joinUs_container .inner form {
   width: 100%;
   position: relative;
-}
-#joinUs_container .inner form img {
-  width: 70%;
-  position: absolute;
-  right: 0%;
-  top: 0;
-}
-#joinUs_container .inner form .name_field {
-  width: 45%;
-  z-index: 1;
-  margin-top: 25px;
-  background-color: #ffffff;
-  padding: 2rem;
-  box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px, rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
-}
-#joinUs_container .inner form .name_field input,
-#joinUs_container .inner form .name_field textarea {
-  width: 100%;
-  margin: 0.5rem 0 1.5rem;
-  padding: 0.7rem;
-  resize: none;
-}
-#joinUs_container .inner form .name_field .btn {
-  margin: auto;
-}
-#joinUs_container .inner form .name_field input::-moz-placeholder {
-  font-size: 1em;
-  color: #0f1c27;
-  opacity: 0.7;
-}
-#joinUs_container .inner form .name_field input:-ms-input-placeholder {
-  font-size: 1em;
-  color: #0f1c27;
-  opacity: 0.7;
-}
-#joinUs_container .inner form .name_field input::placeholder {
-  font-size: 1em;
-  color: #0f1c27;
-  opacity: 0.7;
-}
-#joinUs_container .inner form .name_field input:focus {
-  outline: none !important;
-  border-color: #43eBd8;
-  box-shadow: 0 0 10px #43eBd8;
 }
 #joinUs_container .inner form textarea::-moz-placeholder {
   font-size: 1em;
@@ -943,8 +916,8 @@ button:hover {
 }
 #joinUs_container .inner form textarea:focus {
   outline: none !important;
-  border-color: #43eBd8;
-  box-shadow: 0 0 10px #43eBd8;
+  border-color: #2fc3b4;
+  box-shadow: 0 0 10px #2fc3b4;
 }
 #joinUs_container .inner form input {
   cursor: pointer !important;
@@ -956,70 +929,353 @@ button:hover {
   width: 93%;
   font-weight: 400;
 }
+#joinUs_container .inner form .answer_field {
+  width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#joinUs_container .inner form .answer_field input {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid grey;
+  padding: 0.9rem 0.7rem 0.7rem;
+}
+#joinUs_container .inner form .answer_field input:focus {
+  outline: none !important;
+}
+#joinUs_container .inner form img {
+  width: 70%;
+  position: absolute;
+  right: 0%;
+  top: 0;
+  opacity: 0.7;
+}
+#joinUs_container .inner form .name_field {
+  width: 45%;
+  z-index: 1;
+}
+#joinUs_container .inner form .name_field input,
+#joinUs_container .inner form .name_field textarea {
+  width: 100%;
+  margin: 0.5rem 0 1.5rem;
+  padding: 0.7rem;
+  resize: none;
+}
+#joinUs_container .inner form .name_field input::-moz-placeholder {
+  font-size: 1em;
+  color: #0f1c27;
+  opacity: 0.7;
+}
+#joinUs_container .inner form .name_field input:-ms-input-placeholder {
+  font-size: 1em;
+  color: #0f1c27;
+  opacity: 0.7;
+}
+#joinUs_container .inner form .name_field input::placeholder {
+  font-size: 1em;
+  color: #0f1c27;
+  opacity: 0.7;
+}
+#joinUs_container .inner form .name_field input:focus {
+  outline: none !important;
+  border-color: #2fc3b4;
+  box-shadow: 0 0 10px #2fc3b4;
+}
 #joinUs_container .inner form .radio_field {
+  width: 60%;
   flex-direction: row;
   align-items: flex-start;
+  z-index: 1;
 }
 #joinUs_container .inner form .radio_field label {
   margin-bottom: 0.7rem;
 }
-#joinUs_container .inner form .radio_field_main {
-  width: 70%;
-  margin-top: 2rem;
-  z-index: 1;
-  background-color: #ffffff;
-  padding: 2rem;
-  box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px, rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
+#joinUs_container .inner form .radio_field .answer_field .radio_btn {
+  width: 7%;
 }
-#joinUs_container #second_part {
-  width: 100%;
-  margin: 50px 0;
-  text-align: left;
+#joinUs_container .inner form .radio_field .answer_field label {
+  width: 15%;
 }
-#joinUs_container #second_part .second_form_input {
-  width: 45%;
-  margin: 0.5rem 0 1.5rem;
-  padding: 0.7rem;
+#joinUs_container .inner form .radio_field .answer_field input {
+  width: 75%;
 }
-#joinUs_container #second_part .second_form_input::-moz-placeholder {
-  font-size: 1em;
-  color: #0f1c27;
-  opacity: 0.7;
+#joinUs_container .inner form .form_secondpart span {
+  color: red;
 }
-#joinUs_container #second_part .second_form_input:-ms-input-placeholder {
-  font-size: 1em;
-  color: #0f1c27;
-  opacity: 0.7;
+#joinUs_container .inner form .form_secondpart .border_top {
+  width: 75%;
+  margin: 25px auto 0;
+  border-top: 5px solid #2fc3b4;
+  padding: 1.5rem 2rem 3rem;
 }
-#joinUs_container #second_part .second_form_input::placeholder {
-  font-size: 1em;
-  color: #0f1c27;
-  opacity: 0.7;
+#joinUs_container .inner form .form_secondpart .border_top:hover {
+  border-top: 5px solid #EEB609;
 }
-#joinUs_container #second_part .second_form_input:focus {
-  outline: none !important;
-  border-color: #43eBd8;
-  box-shadow: 0 0 10px #43eBd8;
+#joinUs_container .inner form .form_secondpart .label,
+#joinUs_container .inner form .form_secondpart .radio {
+  width: 85%;
+  margin: 0 auto;
 }
-#joinUs_container #second_part .experience {
+#joinUs_container .inner form .form_secondpart .label {
+  padding: 1.5rem 7rem 1.5rem 5.9rem;
+}
+#joinUs_container .inner form .form_secondpart .label label {
+  width: 0;
+}
+#joinUs_container .inner form .form_secondpart .rate_communication {
   flex-direction: column;
-  align-items: flex-start;
 }
-#joinUs_container #second_part .submit_file_sec {
-  flex-direction: row;
-  align-items: baseline;
+#joinUs_container .inner form .form_secondpart .rate_communication .digits {
+  width: 69%;
+  margin-top: 2rem;
 }
-#joinUs_container #second_part .submit_file_sec .first {
-  width: 45%;
+#joinUs_container .inner form .form_secondpart .rate_communication .radiobtn {
+  width: 95%;
+  margin: 1rem 0;
 }
-#joinUs_container #second_part .submit_file_sec .second {
-  width: 25%;
+#joinUs_container .inner form .form_secondpart .rate_communication .radiobtn h5 {
+  color: #7b7b7b;
+  font-weight: 300;
 }
-#joinUs_container #second_part .submit_file_sec .second input {
+#joinUs_container .inner form .form_secondpart .submit_reset_area {
   width: 100%;
-  background-color: green;
+  margin: 25px auto 0;
+  justify-content: center;
+}
+#joinUs_container .inner form .form_secondpart .submit_reset_area .submit,
+#joinUs_container .inner form .form_secondpart .submit_reset_area .reset {
+  width: 145px;
+}
+#joinUs_container .inner form .form_secondpart .submit_reset_area .submit:hover {
+  background: #09b809;
+  border-radius: 25px 0 15px 0;
+}
+#joinUs_container .inner form .form_secondpart .submit_reset_area .reset {
+  background: #EEB609;
+}
+#joinUs_container .inner form .form_secondpart .submit_reset_area .reset:hover {
+  background: #eb0909;
+  color: #ffffff;
+  border-radius: 25px 0 15px 0;
+}
+#joinUs_container .inner form .form_secondpart .file {
+  width: 145px;
+}
+#joinUs_container .inner form .form_secondpart .fa-upload {
+  padding-right: 0.5rem;
+  font-size: 1.3rem;
+}
+#joinUs_container .inner form .form_secondpart [type=file] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+  width: 0;
+}
+#joinUs_container .inner form .form_secondpart [type=file] + label {
+  background: transparent;
+  border: none;
+  border-radius: 5px;
+  color: #2fc3b4;
+  border: 1.5px solid #2fc3b4;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: inherit;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 0.8rem 1rem;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+#joinUs_container .inner form .form_secondpart [type=file] + label:hover {
+  background-color: #259a8e;
+}
+
+.radio_field {
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.radio_field .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radio_field .container input {
+  position: absolute;
+  opacity: 0;
   cursor: pointer;
 }
-#joinUs_container #second_part .submit_file_sec .third {
-  width: 15%;
+.radio_field .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.radio_field .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.radio_field .container input:checked ~ .checkmark {
+  background-color: #2fc3b4;
+}
+.radio_field .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.radio_field .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.radio_field .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.form_secondpart {
+  /* The container */
+  /* Hide the browser's default checkbox */
+  /* Create a custom checkbox */
+  /* On mouse-over, add a grey background color */
+  /* When the checkbox is checked, add a blue background */
+  /* Create the checkmark/indicator (hidden when not checked) */
+  /* Show the checkmark when checked */
+  /* Style the checkmark/indicator */
+}
+.form_secondpart .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form_secondpart .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.form_secondpart .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+.form_secondpart .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.form_secondpart .container input:checked ~ .checkmark {
+  background-color: #2fc3b4;
+}
+.form_secondpart .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.form_secondpart .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.form_secondpart .container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+.form_secondpart .rate_communication .radiobtn .container {
+  width: 0px !important;
+}
+.form_secondpart .rate_communication,
+.form_secondpart .custom_radio {
+  /* Create a custom radio button */
+  /* Style the indicator (dot/circle) */
+}
+.form_secondpart .rate_communication .checkmark,
+.form_secondpart .custom_radio .checkmark {
+  border-radius: 50%;
+}
+.form_secondpart .rate_communication .container .checkmark:after,
+.form_secondpart .custom_radio .container .checkmark:after {
+  top: 9px;
+  left: 8.5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media (max-width: 1000px) {
+  #joinUs_container .inner form .name_field {
+    width: 75%;
+  }
+  #joinUs_container .inner form .radio_field {
+    width: 100%;
+  }
+  #joinUs_container .inner form .form_secondpart .border_top {
+    width: 95%;
+  }
+  #joinUs_container .inner form .form_secondpart .border_top .rate_communication .radiobtn {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  #joinUs_container .inner form .form_secondpart .border_top {
+    width: 100%;
+  }
+  #joinUs_container .inner form .form_secondpart .border_top .rate_communication .digits {
+    width: 95%;
+    margin-top: 2rem;
+  }
+  #joinUs_container .inner form .form_secondpart .border_top .rate_communication .radiobtn {
+    width: 100%;
+  }
+  #joinUs_container .inner form .form_secondpart .border_top .rate_communication .radiobtn h5 {
+    display: none;
+  }
+}
+@media (max-width: 460px) {
+  #joinUs_container h1 {
+    font-size: 2rem;
+  }
+  #joinUs_container .inner h3 {
+    font-size: 0.9rem;
+  }
+  #joinUs_container .inner form img {
+    display: none;
+  }
+  #joinUs_container .inner form .name_field {
+    width: 100%;
+  }
+  #joinUs_container .inner form .form_secondpart .container {
+    height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */

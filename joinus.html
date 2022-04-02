@@ -1,317 +1,444 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SingaporeHopeFoundation</title>
-  <!-- favicon  -->
-  <link rel="icon" type="image/x-icon" href="img/logo.png">
-  <!-- font awosome link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-
-
-  <!-- navigation starts from here -->
-  <nav class="flex_box" id="navbar">
-    <!-- logo -->
-    <div class="logo flex_box">
-      <a href="home"> <img src="img/logo.png" alt="logo-img" /></a>
-
-    </div>
-    <!-- main menu -->
-    <menu id="menu">
-      <ul class="flex_box" id="menu_item">
-        <li><a href="index.html">About</a></li>
-        <li><a href="joinus.html" class="active">Join us</a></li>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible"content="IE=edge"/>
+    <meta name="viewport"content="width=device-width, initial-scale=1.0"/>
+    <title>SingaporeHopeFoundation</title>
+    <!-- favicon  -->
+    <link rel="icon"type="image/x-icon"href="img/logo.png">
+    <!-- font awosome link -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"href="css/style.css"/>
+  </head>
+  <body>
+    <!-- navigation starts from here -->
+    <nav class="flex_box"id="navbar">
+      <!-- logo -->
+      <div class="logo flex_box">
+        <a href="home"> <img src="img/logo.png"alt="logo-img"/></a>
+      </div>
+      <!-- main menu -->
+      <menu id="menu">
+      <ul class="flex_box"id="menu_item">
+        <li><a href="index.html"class="active">About</a></li>
+        <li><a href="joinUs.html">Join us</a></li>
         <li><a href="initiative.html">Our initiatives</a></li>
         <li><a href="donation.html">Donate</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="#Newsletter">Newsletter</a></li>
       </ul>
-    </menu>
-
-    <!-- hamburger icon -->
-    <div class="container" id="ham_icon" onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-  </nav>
-  <!-- navigation ends here -->
-
-  <!-- home section starts from here -->
-  <section id="home">
-    <div class="text_area flex_box">
-      <span>Join US</span>
-    </div>
-  
-  </section>
-  <!-- home section ends here -->
-
-<!-- container starts -->
-  <section id="joinUs_container">
-    <h1>Join Us</h1>
-    <h3> Our Team Really Need Volunteers</h3>
-    <p>Those whio are willing and has the desire to help those in need. if you are young, active and ready to change the world for the better, we look forward to seeing you in our volunteer family.</p>
-
-   <div class="inner flex_box">
-    <form class="flex_box">
-
-      <img src="img/joinus.png" alt="">
-        <!-- ------------ -->
-      <div class="name_field flex_box">
-          <label for="text">Full Name</label>
-          <input type="text" placeholder="Full Name" name="text" id="#" />
-          <label for="num">Your Age</label>
-          <input type="date" id="birthday" name="birthday">
-          </select>
-        </div>
-
-      <!-- radio field -->
-          <div class="radio_field radio_field_main flex_box">
-              <h2>Where you heard about us ?</h2>
-           
-         
-             <input type="radio" name="radio" class="radio_btn"> 
-              <label for="text">Heard on TV</label>
-              
-          <input type="radio" name="radio" class="radio_btn"> 
-             <label for="text">Recommendeation from a friend</label>
-             
-             <input type="radio" name="radio" class="radio_btn"> 
-              <label for="text">Social media (Twitter, Facebook, etc.)</label>
-             
-             <input type="radio" name="radio" class="radio_btn">
-              <label for="text">Recommendeation from another podcast</label> 
-             
-             <input type="radio" name="radio" class="radio_btn"> 
-              <label for="text">Reading an article</label>
-              
-             <input type="radio" name="radio" class="radio_btn"> 
-             <label for="text">iTunes charts</label>
-              
-             <input type="radio" name="radio" class="radio_btn"> 
-             <label for="text">A podcast app</label>
-             
-             <input type="radio" name="radio" class="radio_btn"> 
-              <label for="text">Other (please specify below)</label>
-             <textarea type="message" name="message" id="" cols="75" rows="5"></textarea> 
-                 
-          </div>
-    </form>
-<!-- ============================================================================================================ -->
-<!-- second_part -------------------------- -->
-
-    <form action="#" id="second_part">
-       <!-- competitive area -->  
-     <div class="competitive">
-    <h3>What is one feature that gives you a competitive edge over others? </h3>
-    <div class="radio_field flex_box">
-            <input type="radio" name="radio" class="radio_btn"> 
-              <label for="text">Reading an article</label>
-              
-             <input type="radio" name="radio" class="radio_btn"> 
-             <label for="text">iTunes charts</label>
-              
-             <input type="radio" name="radio" class="radio_btn"> 
-             <label for="text">A podcast app</label>
-     </div>
-     </div>
-     <!-- experience -->
- <section class="flex_box experience">
-  <h3> Do you have any former experience in charity work or 
-  scholarships/organizations/internships ? If no, mention. If yes, 
-  explain and share your credentials/statistics below with your resume...
-   </h3>  
-        <div class="radio_field flex_box">
-            <input type="radio" name="radio" class="radio_btn"> 
-             <label for="text"> No</label>
-              
-             <input type="radio" name="radio" class="radio_btn"> 
-             <label for="text"> Yes</label>
-             <!-- submit your file--------- -->
-             <div class="submit_file_sec flex_box">
-          <div class="first">
-                <label for="text" >Optional</label>
-              <textarea  type="message" name="message" id="" cols="75" rows="5" placeholder="Your Experience"></textarea> 
-          </div>
-             
-              <div class="second">
-                <label for="text" >Please Choose Your File</label>
-              <input type="file" id="myFile" name="filename">
-              </div>
-              <div class="third">
-  
-              <label for="text" >Submit Now</label>
-              <input type="submit" class="btn">
-              </div>
-            </div>
-             </div>
-            <!-- Rate your communication section -->
-            <section>
-              <h3>Rate your communication/ verbal skills on a scale from 1-10</h3>
-                  <!-- range button -->
-             <p><label for="range_weight">Rate Now: </label> <input type="range" name="length" class="slider" min="0" max="10" value="2">
-              <span  class="slider_label"></span></p>
-
-           <!-- why want to join -->
-             <h3>Why do you want to join our Organization?</h3>
-    
-             <div class="radio_field flex_box">
-            <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text"> want to help people </label>
-              
-             <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text"> my soal ask me to do this </label>
-
-             <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text"> to fullfil my dream for social service </label>
-
-               <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text">Want a job $ earn money</label>
-
-             <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text"> Dont know </label>
-
-          </div>
-
-             <!-- Which positions would you like--------- -->
-
-             <h3> Which positions would you like to apply for? You can select 2 options for application </h3>
-              <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text">CEO</label>
-
-             <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text"> CTO </label>
-
-              <input type="checkbox" name="radio" class="radio_btn"> 
-             <label for="text"> VOLUNTEER </label>
-             <!-- YOUR EMAIL -->
-             <h3>What is your email id?</h3>
-             <input type="email" placeholder="Your Email" name="text" id="#" class="second_form_input">
-
-
-<!-- contribute -->
-<h3> How and what can you contribute to our cause/ organization?
-</h3>             
-<!-- your idea -->
-<h3>What are some ideas/ attirbutes you can pitch to our organization to create a more compelling, well balanced-framework? Which themes can we accomodate in our initiative?
-</h3>
-<!-- your peronality -->
-<h3> What are your interests/hobbies? What is your personality like?</h3>
-<!-- hours you can work -->
-<h3>How many hours can you contribute / week?</h3>
-<!-- thank you  -->
-<h3> Thank you for filling out this form! Is there anything you would like to mention/ specify to us?</h3>
-<h4>Here is Your field</h4>
-<textarea name="" id="" cols="30" rows="5" placeholder="Please mention your views here" class="second_form_input"></textarea>
-            </section>
-
-    
-
-  </section>
-
-    </form>   <!-- second form -->
-  
-    </div>    <!-- inner -->
-
-  </section> 
-  <!-- container ends -->
-
-  
-
-
-
-
-  
-  <!-- footer starts from here-->
-  <section id="footer" class="flex_box">
-    <!-- subscribe  section starts  -->
-    <section id="subscribe">
-      <div class="flex_box">
-        <h2>Do you have a question? </h2>
-        <div class="input_side">
-          <input type="email" placeholder="Email Adress">
-          <a href="#home"> <button class="btn btn_yellow">subscribe</button></a>
-        </div>
+      </menu>
+      <!-- hamburger icon -->
+      <div class="container"id="ham_icon"onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </nav>
+    <!-- navigation ends here -->
+    <!-- home section starts from here -->
+    <section id="home">
+      <div class="text_area flex_box">
+        <span>Join US</span>
+        <p>Those who are willing and has the desire to help those in need. if you are young,active and ready to change the world for the better,we look forward to seeing you in our volunteer family.</p>
       </div>
     </section>
-    <!-- subscribe section ends-->
-
-    <!-- --------- main part starts---------- -->
-
-    <!-- footer_left -->
-    <div class="footer_left flex_box">
-      <!-- ------ -->
-      <div class="foot_mission">
-        <h3>Our Mission</h3>
-        <p>So seed seed green that winged cattle in. Gathering thing made fly you're no
-          divided deep moved us lan Gathering thing us land years living.
-          <br> <br>
-          So seed seed green that winged cattle in. Gathering thing made
-          fly you're no divided deep moved
-        </p>
-      </div>
-      <!-- --------- -->
-      <div class="foot_links">
-        <h3>Quick Links</h3>
-
-        <li><a href="#home">home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#causes">Causes</a></li>
-        <li><a href="#event">event</a></li>
-        <li><a href="#news">news</a></li>
-        <li><a href="#contact">contact</a></li>
-      </div>
-    </div>
-    <!-- ------footer_right------- -->
-    <div class="footer_right flex_box">
-      <!-- ------ -->
-      <div class="foot_gallery flex_box">
-        <h3>Gallery</h3>
-        <li><img src="img/gal1.png" alt=""></li>
-        <li><img src="img/gal2.png" alt=""></li>
-        <li><img src="img/gal3.png" alt=""></li>
-        <li><img src="img/gal4.png" alt=""></li>
-        <li><img src="img/gal5.png" alt=""></li>
-        <li><img src="img/gal6.png" alt=""></li>
-      </div>
-      <!-- ------ -->
-      <div class="foot_contact flex_box">
-        <h3>Contact Us</h3>
-        <div class="icon flex_box">
-          <a href="#" class="fa fa-location-arrow"></a>
-          <a href="#" class="fa fa-phone"></a>
-          <a href="#" class="fa fa-envelope"></a>
+    <!-- home section ends here -->
+    <!-- joinUs_container starts  from here-->
+    <section id="joinUs_container">
+      <h1> Our Team Really Need Volunteers</h1>
+      <div class="inner flex_box">
+        <form class="flex_box"id="myForm">
+          <img src="img/joinus.png"alt="">
+          <!-- name_field------------ -->
+          <div class="name_field flex_box border_top">
+            <label for="text">Full Name</label>
+            <input type="text"placeholder="Full Name"name="text"id="#"class="input"/>
+            <label for="num">Your Age</label>
+            <input type="date"id="birthday"name="birthday"class="input">
+          </select>
         </div>
-        <div class="cont_details flex_box">
-          <span>head Office</span>
-          <p>123, Main Street, Your City</p>
-          <span>Phone Number</span>
-          <li>+123 456 7890</li>
-          <li>+123 456 7890</li>
-          <span>Email</span>
-          <li>free@infoexample.com</li>
-          <li>www.infoexample.com</li>
+        <!-- radio field -->
+        <section class="radio_field border_top flex_box">
+          <h3>Where you heard about us ?</h3>
+          <label class="container">Facebook
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Instagram
+            <input type="radio"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Youtube
+            <input type="radio"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Email
+            <input type="radio"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Google Podcasts
+            <input type="radio"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Spotify
+            <input type="radio"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">SHF Website
+            <input type="radio"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <label class="container">Other:<input type="radio"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <input type="text"name="text"id="#"class="input"/>
         </div>
-      </div>
-    </div>
-
-  </section>
-  <!-- ----- copyright sec------ -->
-  <div class="copyright_sec">
-    <h3>Copyright © 2022 All rights reserved | made with <span class="fa fa-heart"></span> by <a href="#"> Team WebGrasp
+      </section>
+      <!-- ============================================================================================================ -->
+      <!-- form_secondpart starts from -->
+      <section class="form_secondpart">
+        <div class="competitive border_top">
+          <!-- competitive area -->
+          <h3>What is one feature that gives you a competitive edge over others? Elucidate. <span> *</span></h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Answer"class="input"/>
+          </div>
+        </div>
+        <!-- experience -->
+        <div class="border_top">
+          <h3> Do you have any former experience in charity work or
+          scholarships/organizations/internships ? If no,mention. If yes,explain and share your credentials/statistics below with your resume...
+          </h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Answer"class="input"/>
+          </div>
+          <!-- submit resume -->
+          <h3>
+          Submit your CV / RESUME / WORK EXPERIENCE / sample works <span>*</span>
+          </h3>
+          <input type="file"id="file"/>
+          <label for="file"class="file"> <i class="fa fa-upload"aria-hidden="true"></i>Upload File</label>
+        </div>
+        <!--  Rate your communication -->
+        <div class="border_top">
+          <h3>  Rate your communication/ verbal skills on a scale from 1-10 <span>*</span></h3>
+          
+          <div class="rate_communication flex_box">
+            
+            <!-- digits -->
+            <div class="digits flex_box">
+              <h4>1</h4>
+              <h4>2</h4>
+              <h4>3</h4>
+              <h4>4</h4>
+              <h4>5</h4>
+              <h4>6</h4>
+              <h4>7</h4>
+              <h4>8</h4>
+              <h4>9</h4>
+              <h4>10</h4>
+            </div>
+            <!-- radio buttons -->
+            <div class="radiobtn flex_box">
+              
+              <h5>  Very Bad</h5>
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- ----------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- ---------------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- -------------- -->
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- ---------------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- --------------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- -------------------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- ----------------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              <!-- --------------------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+              
+              <!-- --------------- -->
+              
+              
+              <label class="container">
+                <input type="radio"name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <!-- ------------ -->
+              
+              
+              <h5>  Amazing</h5>
+            </div>
+          </div>
+        </div>
+        <!-- why want to join -->
+        <div class="border_top">
+          <h3>Why do you want to join our Organization?</h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Answer"class="input"/>
+          </div>
+        </div>
+        <!-- Which positions would you like--------- -->
+        <div class="border_top position">
+          <h3> Which positions would you like to apply for? You can select 2 options for application </h3>
+          <!-- checkbox area -->
+          <label class="container">GRAPHIC DESIGNING
+            <input type="checkbox"checked="checked">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container"> CONTENT WRITER
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">WEBSITE MANAGER
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">SOCIAL MEDIA OUTREACH MANAGER
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">CHIEF HUMAN RESOURCE OFFICER
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">EVENT MANAGER
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">ORGANIZATION TIE-UP AMBASSADOR
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">TEACHER
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <!-- your email -->
+        <div class="border_top">
+          <h3>What is your email id?</h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Email"class="input"/>
+          </div>
+        </div>
+        <!-- contribute -->
+        <div class="border_top">
+          <h3> How and what can you contribute to our cause/ organization? <span>*</span>
+          </h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Answer"class="input"/>
+          </div>
+        </div>
+        <!-- your idea -->
+        <div class="border_top">
+          <h3>What are some ideas/ attirbutes you can pitch to our organization to create a more compelling,well balanced-framework? Which themes can we accomodate in our initiative?
+          </h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Answer"class="input"/>
+          </div>
+        </div>
+        <!-- your peronality -->
+        <div class="border_top">
+          <h3> What are your interests/hobbies? What is your personality like?<span>*</span></h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Answer"class="input"/>
+          </div>
+        </div>
+        <!-- hours you can work -->
+        <div class="border_top custom_radio">
+          <h3>How many hours can you contribute / week?</h3>
+          <!-- radio field -->
+          <label class="container">4-5 hours
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">5-6 hours
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">6-7 hours
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">7-8 hours
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">8-9 hours
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">9-10 hours
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">10+ hours
+            <input type="radio"checked="checked"name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+        <!-- thank you  -->
+        <div class="border_top">
+          <h3> Thank you for filling out this form! Is there anything you would like to mention/ specify to us?</h3>
+          <!-- answer_field -->
+          <div class="answer_field flex_box">
+            <input type="text"name="text"id="#"placeholder="Your Answer"class="input"/>
+          </div>
+        </div>
+        <div class="submit_reset_area flex_box">
+          <input type="button"value="submit"class="submit btn">
+          <input type="button"onclick="myFunction()"value="Clear Form"class="reset btn">
+        </div>
+        </form> <!-- form ends  -->
+        </div>   <!-- inner -->
+      </section>
+      <!-- container ends -->
+      <!-- footer starts from here-->
+      <section id="footer"class="flex_box">
+        <!-- subscribe  section starts  -->
+        <section id="subscribe">
+          <div class="flex_box">
+            <h2>Do you have a question? </h2>
+            <div class="input_side">
+              <input type="email"placeholder="Email Adress">
+              <a href="#home"> <button class="btn btn_yellow">subscribe</button></a>
+            </div>
+          </div>
+        </section>
+        <!-- subscribe section ends-->
+        <!-- --------- main part starts---------- -->
+        <!-- footer_left -->
+        <div class="footer_left flex_box">
+          <!-- ------ -->
+          <div class="foot_mission">
+            <h3>Our Mission</h3>
+            <p>So seed seed green that winged cattle in. Gathering thing made fly you're no
+              divided deep moved us lan Gathering thing us land years living.
+              <br> <br>
+              So seed seed green that winged cattle in. Gathering thing made
+              fly you're no divided deep moved
+            </p>
+          </div>
+          <!-- --------- -->
+          <div class="foot_links">
+            <h3>Quick Links</h3>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#causes">Causes</a></li>
+            <li><a href="#event">event</a></li>
+            <li><a href="#news">news</a></li>
+            <li><a href="#contact">contact</a></li>
+          </div>
+        </div>
+        <!-- ------footer_right------- -->
+        <div class="footer_right flex_box">
+          <!-- ------ -->
+          <div class="foot_gallery flex_box">
+            <h3>Gallery</h3>
+            <li><img src="img/gal1.png"alt=""></li>
+            <li><img src="img/gal2.png"alt=""></li>
+            <li><img src="img/gal3.png"alt=""></li>
+            <li><img src="img/gal4.png"alt=""></li>
+            <li><img src="img/gal5.png"alt=""></li>
+            <li><img src="img/gal6.png"alt=""></li>
+          </div>
+          <!-- ------ -->
+          <div class="foot_contact flex_box">
+            <h3>Contact Us</h3>
+            <div class="icon flex_box">
+              <a href="#"class="fa fa-location-arrow"></a>
+              <a href="#"class="fa fa-phone"></a>
+              <a href="#"class="fa fa-envelope"></a>
+            </div>
+            <div class="cont_details flex_box">
+              <span>head Office</span>
+              <p>123,Main Street,Your City</p>
+              <span>Phone Number</span>
+              <li>+123 456 7890</li>
+              <li>+123 456 7890</li>
+              <span>Email</span>
+              <li>free@infoexample.com</li>
+              <li>www.infoexample.com</li>
+            </div>
+          </div>
+        </div>
+        <!-- -============== -->
+      </section>
+      <!-- ----- copyright sec------ -->
+      <div class="copyright_sec">
+        <h3>Copyright © 2022 All rights reserved | made with <span class="fa fa-heart"></span> by <a href="#"> Team WebGrasp
       </a></h3>
-  </div>
-
-  <!-- jquery link -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    </div>
+    <!-- jquery link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

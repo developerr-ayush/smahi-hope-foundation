@@ -1,12 +1,29 @@
 #joinUs_container {
   width: 100%;
   text-align: center;
-  background-color: rgb(211, 214, 212);
- 
-*section{
-  padding: 0;
-}
+  background-color: #f0f0f0;
 
+  *section {
+    padding: 0;
+  }
+
+  .border_top {
+    border-top: 7px solid $yellow_color;
+    border-radius: 25px 0 15px 0;
+    margin-top: 25px;
+    background-color: $white;
+    padding: 2rem;
+    transition: 0.5s;
+  }
+  .border_top:hover {
+    border-color: $primary_color;
+    -webkit-box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
+      rgba(94, 94, 94, 0.4) 10px 4px 6px -10px;
+    box-shadow: rgba(91, 90, 90, 0.4) 10px 10px 15px 3px,
+      rgba(76, 76, 76, 0.4) 10px 4px 6px -10px;
+  }
+
+  // form inner--------
   .inner {
     text-align: left;
     h2 {
@@ -16,60 +33,19 @@
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       padding: 1rem 0;
       width: 100%;
-      font-weight: 700;
+      font-weight: 600;
     }
-
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     // first form----------
     form {
       width: 100%;
       position: relative;
-      // img
-       img{
-         width: 70%; position: 
-         absolute; right: 0%;
-          top: 0;}
 
-      // name field
-    .name_field {
-      width: 45%;
-      z-index: 1;
-      margin-top:25px;
-      background-color: $white;
-      padding: 2rem;
-       -webkit-box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
-    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
-  box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
-    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
-
-        input,
-        textarea {
-          width: 100%;
-          margin: 0.5rem 0 1.5rem;
-          padding: 0.7rem;
-          resize: none;
-        }
-        .btn {
-          margin: auto;
-        }
-
-        input::placeholder {
-          font-size: 1em;
-          color: $dark_blue;
-          opacity: 0.7;
-        }
-
-        input:focus {
-          outline: none !important;
-          border-color: $primary_color;
-          box-shadow: 0 0 10px $primary_color;
-        }
-      }
-
-
-      // important input attributes change for whole page -------------------------------------
+      // ************************************************************************************************************************
+      // important input attributes change for every input field -------------------------------------
       textarea::placeholder {
         font-size: 1em;
         color: $dark_blue;
@@ -92,83 +68,284 @@
         font-weight: 400;
       }
 
-      // radio field
-      .radio_field {
-        flex-direction: row;
+      // answer_field
+      .answer_field {
+        width: 100%;
+        justify-content: flex-start;
         align-items: flex-start;
-        label{
-          margin-bottom: .7rem;
+
+        input {
+          border: none;
+          width: 100%;
+          border-bottom: 1px solid grey;
+          padding: 0.9rem 0.7rem 0.7rem;
         }
+        input:focus {
+          outline: none !important;
+        }
+        // answer field ends ---
+      }
+      // ***********************************************************************************
+
+      // img
+      img {
+        width: 70%;
+        position: absolute;
+        right: 0%;
+        top: 0;
+        opacity: 0.7;
       }
 
-      // radio_field_main
+      // name field
+      .name_field {
+        width: 45%;
+        z-index: 1;
 
-      .radio_field_main{
-      width: 70%;
-      margin-top: 2rem;
-      // margin-left: 25%;
-z-index: 1;
-      background-color: $white;
-      padding: 2rem;
-       -webkit-box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
-    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
-  box-shadow: rgba(147, 145, 145, 0.4) 10px 10px 15px 3px,
-    rgba(117, 115, 115, 0.4) 10px 4px 6px -10px;
-      }
-    }
-    // important input attributes change ends---------------------------
-  }
-
-  // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-  // second part---------
-  #second_part {
-    width: 100%;
-    // background-color:$grey;
-    margin: 50px 0;
-    text-align: left;
-
-.second_form_input{
-  width: 45%;
-   margin: 0.5rem 0 1.5rem;
+        input,
+        textarea {
+          width: 100%;
+          margin: 0.5rem 0 1.5rem;
           padding: 0.7rem;
-}
-    
-    .second_form_input::placeholder {
+          resize: none;
+        }
+
+        input::placeholder {
           font-size: 1em;
           color: $dark_blue;
           opacity: 0.7;
-          
         }
 
-          .second_form_input:focus {
+        input:focus {
           outline: none !important;
           border-color: $primary_color;
           box-shadow: 0 0 10px $primary_color;
         }
-  
-    .experience {
-      flex-direction: column;
-      align-items: flex-start;
+      }
+      // .radio_field starts from here-------------------
+      .radio_field {
+        width: 60%;
+        flex-direction: row;
+        align-items: flex-start;
+        z-index: 1;
+
+        label {
+          margin-bottom: 0.7rem;
+        }
+
+        // answer_field  some changes
+        .answer_field {
+          .radio_btn {
+            width: 7%;
+          }
+          label {
+            width: 15%;
+          }
+          input {
+            width: 75%;
+          }
+        }
+      }
+      // ===============+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+      // form_seconpart starst from--------
+      .form_secondpart {
+        span {
+          color: red;
+        }
+        .border_top {
+          width: 75%;
+          margin: 25px auto 0;
+          border-top: 5px solid $primary_color;
+          padding: 1.5rem 2rem 3rem;
+        }
+        .border_top:hover {
+          border-top: 5px solid $yellow_color;
+        }
+        .label,
+        .radio {
+          width: 85%;
+          margin: 0 auto;
+        }
+        .label {
+          padding: 1.5rem 7rem 1.5rem 5.9rem;
+
+          label {
+            width: 0;
+          }
+        }
+        // rate_communication section--------
+        .rate_communication {
+          flex-direction: column;
+          .digits {
+            width: 69%;
+            margin-top: 2rem;
+          }
+          .radiobtn {
+            width: 95%;
+            margin: 1rem 0;
+
+            h5 {
+              color: $grey;
+              font-weight: 300;
+            }
+          }
+        }
+
+        // .submit_reset_area button--------------
+        .submit_reset_area {
+          width: 100%;
+          margin: 25px auto 0;
+
+          justify-content: center;
+
+          .submit,
+          .reset {
+            width: 145px;
+          }
+          .submit:hover {
+            background: #09b809;
+            border-radius: 25px 0 15px 0;
+          }
+          .reset {
+            background: $yellow_color;
+          }
+
+          .reset:hover {
+            background: #eb0909;
+            color: $white;
+            border-radius: 25px 0 15px 0;
+          }
+        }
+
+        // experience
+
+        // upload file button
+        .file {
+          width: 145px;
+        }
+
+        .fa-upload {
+          padding-right: 0.5rem;
+          font-size: 1.3rem;
+        }
+
+        [type="file"] {
+          height: 0;
+          overflow: hidden;
+          width: 0;
+          width: 0;
+        }
+
+        [type="file"] + label {
+          background: transparent;
+          border: none;
+          border-radius: 5px;
+          color: $primary_color;
+          border: 1.5px solid $primary_color;
+          cursor: pointer;
+          display: inline-block;
+          font-family: "Rubik", sans-serif;
+          font-size: inherit;
+          font-weight: 500;
+          margin-bottom: 1rem;
+          outline: none;
+          padding: 0.8rem 1rem;
+          position: relative;
+          transition: all 0.3s;
+          vertical-align: middle;
+
+          &:hover {
+            background-color: darken($primary_color, 10%);
+          }
+        }
+      }
     }
-    // submit_file_sec
+  }
+}
 
-    .submit_file_sec {
-      flex-direction: row;
-      align-items: baseline;
-      // background-color: rgb(28, 50, 50);
+@import "RadioCheckBox";
 
-      .first{
-        width: 45%;
-      }
-       .second{
-        width: 25%;
+@media (max-width: 1000px) {
+  #joinUs_container {
+    // form inner--------
+    .inner {
+      form {
+        .name_field {
+          width: 75%;
+        }
+        .radio_field {
+          width: 100%;
+        }
 
-        input{width: 100%; background-color: green; cursor: pointer;}
-      }
-      .third{
-        width: 15%;
+        .form_secondpart {
+          .border_top {
+            width: 95%;
+
+            .rate_communication {
+              .radiobtn {
+                font-size: 0.8rem;
+              }
+            }
+          }
+        }
       }
     }
+  }
+}
 
+@media (max-width: 600px) {
+  #joinUs_container {
+    // form inner--------
+
+    .inner {
+      form {
+        .form_secondpart {
+          .border_top {
+            width: 100%;
+
+            .rate_communication {
+              .digits {
+                width: 95%;
+                margin-top: 2rem;
+              }
+              .radiobtn {
+                h5 {
+                  display: none;
+                }
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  #joinUs_container {
+    // form inner--------
+    h1 {
+      font-size: 2rem;
+    }
+
+    .inner {
+      h3 {
+        font-size: 0.9rem;
+      }
+      form {
+        // img
+        img {
+          display: none;
+        }
+        .name_field {
+          width: 100%;
+        }
+        .form_secondpart {
+          .container {
+            height: 20px;
+          }
+        }
+      }
+    }
   }
 }

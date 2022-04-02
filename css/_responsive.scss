@@ -1,6 +1,7 @@
 @media (min-width: 900px) {
   #navbar {
     menu {
+      width: 57%;
       // dropdown starts from here =============
       .dropdown {
         background-color: $white;
@@ -66,7 +67,6 @@
     }
     //  main menu
     menu {
-  
       background-color: $dark_grey;
       position: absolute;
       width: 100%;
@@ -86,19 +86,18 @@
         transition: all 0.3s ease-in-out;
         overflow: hidden;
         height: 0;
-     
-    
+
         li {
           width: inherit;
           padding: 1rem 0;
           border-bottom: 1px solid $grey;
         }
-    }
-    #menu_item li:last-child {
-      border-bottom: none;
+      }
+      #menu_item li:last-child {
+        border-bottom: none;
+      }
     }
   }
-}
 }
 @media (max-width: 1000px) {
   // abouts section  starts----
@@ -231,13 +230,12 @@
   html {
     font-size: 85%;
   }
-   #navbar {
-     padding: 1rem 1.5rem;
+  #navbar {
+    padding: 1rem 1.5rem;
 
-     menu{
-       padding: 1rem 1.8rem;
-     }
- 
+    menu {
+      padding: 1rem 1.8rem;
+    }
   }
   // home ------------
   #home {
@@ -339,5 +337,3 @@
     }
   }
 }
-
-

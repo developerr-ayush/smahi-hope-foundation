@@ -62,14 +62,11 @@ hamIcon.addEventListener("click", function () {
   });
 
 
-  // function for input type range
 
-  $(function () {
-    $(".slider").on("input change", function () {
-      $(this).next($(".slider_label")).html(this.value);
-    });
-    $(".slider_label").each(function () {
-      var value = $(this).prev().attr("value");
-      $(this).html(value);
-    });
-  });
+  // form reset function
+
+  function myFunction() {
+    document.getElementById("myForm").reset();
+  }
+
+  
