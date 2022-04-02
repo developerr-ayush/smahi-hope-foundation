@@ -144,24 +144,8 @@ button:hover {
 #navbar menu a:hover {
   color: #2fc3b4;
 }
-#navbar menu .dropdown li {
-  width: inherit;
-  padding: 0.9rem 1.2rem;
-  border-bottom: 1px solid #cbc9c9;
-}
-#navbar menu .dropdown li a {
-  font-size: 0.8rem;
-  color: rgba(21, 21, 22, 0.9333333333);
-}
-#navbar menu .dropdown li:hover {
-  background-color: #2fc3b4;
-}
-#navbar menu .dropdown li:hover a {
-  color: #ffffff;
-}
 
 #home {
-  padding: 0;
   z-index: 99;
   background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url(../img/home.png) no-repeat scroll center top;
   background-size: cover;
@@ -183,6 +167,7 @@ button:hover {
 #home .text_area span {
   color: #EEB609;
   font-size: 2.5rem;
+  text-transform: uppercase;
 }
 #home .text_area h1 {
   font-size: 2.8rem;

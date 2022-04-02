@@ -176,52 +176,7 @@ button:hover {
     }
 
     
-      // dropdown starts from here =============
-
-      .dropdown {
-      //   background-color: $white;
-      //   width: 200px;
-      //   position: absolute;
-      //   top: 150px;
-      //   left: 75%;
-      //   flex-direction: column;
-      //   align-items: flex-start;
-      //   opacity: 0;
-      //   visibility: hidden;
-      //   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      //     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-      //   transition: all 0.4s ease-in-out;
-
-         // dropdown list----------------
-
-        li {
-          width: inherit;
-          padding:.9rem 1.2rem ;
-          border-bottom: 1px solid #cbc9c9;
-          
-          a {
-             font-size: .8rem;
-            color: $black_color;
-          }
-       
-        }
-          li:hover{
-            background-color: $primary_color;
-            a{
-                color: $white;
-            }
-          }
-      }
-
-        // dropdown ends here========================
-      // .blog_links {
-      //   left: 80%;
-        
-      // }
-
-      //  hover efects----------------
-
-    // hover effects in _responsive.scss
+     
 
    
       }
@@ -231,7 +186,6 @@ button:hover {
 
 // home starts here------------------------
 #home {
-  padding: 0;
   z-index: 99;
   background: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)),
     url(../img/home.png) no-repeat scroll center top;
@@ -254,6 +208,7 @@ button:hover {
     span {
       color: $yellow_color;
       font-size: 2.5rem;
+      text-transform: uppercase;
     }
 
     h1 {
@@ -680,3 +635,5 @@ button:hover {
 @import "hamburger";
 @import "contact";
 @import "joinUs";
+@import "blog";
+
