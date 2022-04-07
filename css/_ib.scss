@@ -1,0 +1,349 @@
+// navbar starts-----------
+#navbar {
+  .logo {
+    img {
+      -webkit-filter: drop-shadow(5px 5px 5px #000000);
+      filter: drop-shadow(0px 7px 1px #000000);
+    }
+  }
+
+  .ib_menu {
+    width: 45%;
+
+    ul {
+      li {
+        a {
+          font-weight: 600;
+          text-shadow: 0px 7px 2px $dark_grey;
+        }
+        a:hover {
+          color: $primary_color;
+          i {
+            color: $yellow_color;
+          }
+        }
+      }
+
+      form.example {
+        max-width: 50%;
+        -webkit-filter: drop-shadow(5px 5px 5px #000000);
+        filter: drop-shadow(0px 7px 7px #000000);
+      }
+      form.example input[type="text"] {
+        padding: 6.5px 8px;
+        font-size: 17px;
+        border: none;
+        float: left;
+        width: 80%;
+        background: #1a7c7184;
+        border-radius: 20px;
+      }
+
+      form.example button {
+        float: left;
+        width: 20%;
+        padding: 7px;
+        background: $yellow_color;
+        color: white;
+        font-size: 17px;
+        border: none;
+        border-radius: 20px;
+        border-left: none;
+        cursor: pointer;
+      }
+
+      form.example button:hover {
+        background: $primary_color;
+      }
+
+      form.example::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      ::-webkit-input-placeholder {
+        /* Edge */
+        font-size: 0.7em;
+      }
+
+      :-ms-input-placeholder {
+        /* Internet Explorer */
+        font-size: 0.7em;
+      }
+
+      ::placeholder {
+        font-size: 0.7em;
+      }
+    }
+  }
+
+  // hamburgar----------
+  .container {
+    -webkit-filter: drop-shadow(5px 5px 5px #000000);
+    filter: drop-shadow(0px 7px 1px #000000);
+  }
+
+  
+}
+//  navbar ends -------------
+
+// home
+#ib_home {
+  z-index: 99;
+  background: linear-gradient(rgba(3, 1, 10, 0.6), rgba(3, 1, 10, 0.6)),
+    url(../img/aqua.jpg) no-repeat scroll center top;
+  background-size: cover;
+  padding: 20% 0%;
+  transition: all 1s;
+
+  // tex area starts------------
+
+  .text_area {
+    flex-direction: column;
+    position: relative;
+    width: 64%;
+    margin: 4% auto 0;
+    text-align: center;
+    span {
+      color: $yellow_color;
+      font-size: 3rem;
+      text-transform: uppercase;
+      text-shadow: 0px 12px 5px $dark_grey;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & {
+      padding: 25% 0%;
+      background-position: center;
+    }
+    .text_area {
+      margin: 8% auto 0;
+      span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+// home ends here------------------------
+
+// ib about section  starts----
+.ib_about {
+  z-index: -1;
+  background: transparentize($color: #000000db, $amount: 0) !important;
+  .about_right {
+    position: relative;
+    width: 45% !important;
+    box-shadow: none !important;
+    margin-left: 2% !important;
+    margin-top: 0 !important;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    span {
+      color: $primary_color;
+    }
+
+    button {
+      width: 90px;
+      height: 30px;
+      border: none;
+      margin-bottom: 10px;
+      border-radius: 0;
+      background: none;
+      color: $primary_color;
+      font-weight: 700;
+    }
+
+    button:hover {
+      border-bottom: 2px solid $dark_grey;
+      color: $dark_grey;
+      letter-spacing: 1px;
+    }
+
+    .icon {
+      a {
+        font-size: 1.5rem;
+        padding: 0.7rem;
+        color: $primary_color;
+      }
+      a:hover {
+        transform: translateY(4px);
+        color: $dark_grey;
+      }
+    }
+  }
+  .about_right::after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: $primary_color;
+    display: block;
+    transition: 0.3s;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+  .about_right::before {
+    content: "";
+    width: 5px;
+    height: 40px;
+    background-color: $dark_grey;
+    display: block;
+    transition: 0.3s;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+
+  @media (max-width: 1000px) {
+    .about_right {
+      width: 100% !important;
+      margin-top: 25px !important;
+    }
+  }
+}
+
+// abouts section ends---
+
+// ib three sec--------
+
+.three_boxes {
+  .voluteer_card:hover {
+    opacity: 0.5;
+  }
+}
+
+// video section------------
+.video {
+  padding: 0rem 4rem;
+  background-color: $white !important;
+  justify-content: space-between !important;
+
+  .frame_panel_inner {
+    margin: 15px 0 45px;
+    width: 45%;
+    background: linear-gradient(rgba(3, 1, 10, 0.8), rgba(3, 1, 10, 0.8)),
+      url("../img/img-ib3.jpg");
+    background-size: cover;
+    padding: 20% 0%;
+    background-position: center top;
+    #ancher_tag {
+      .video_btn {
+        width: 15%;
+        opacity: 0.3;
+        transition: 0.3s;
+      }
+
+      .video_btn:hover {
+        opacity: 1;
+      }
+    }
+    text-align: center;
+    align-items: center;
+  }
+
+  .frame_panel_inner {
+    -webkit-filter: drop-shadow(20px 15px 1px #6e6e6e);
+    filter: drop-shadow(15px 10px 1px #767575);
+  }
+
+  // video right----
+
+  .about_right::after {
+    display: none;
+  }
+  .about_right::before {
+    content: "";
+    display: none;
+  }
+
+  .about_right {
+    width: 45% !important;
+    height: 450px !important;
+    text-align: justify;
+    border: 1px solid $grey;
+    transition: all 0.5s ease-in-out;
+    h2 {
+      padding-bottom: 1rem;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .about_right:hover {
+    cursor: pointer;
+    filter: drop-shadow(2px 7px 10px $primary_color);
+
+    h2 {
+      color: $primary_color;
+    }
+    span {
+      color: $dark_grey;
+    }
+  }
+
+  // mwdia
+  @media (max-width: 1000px) {
+    .frame_panel_inner {
+      margin: 15px auto 15px;
+      width: 90%;
+      padding: 20% 0% 30%;
+      filter: none;
+    }
+
+    .about_right {
+      width: 100% !important;
+      margin: 25px 0 65px !important;
+      height: auto !important;
+    }
+  }
+}
+// footer-------------------
+.footIb {
+  padding: 2rem 4rem;
+  h3 {
+    font-size: 0.9rem;
+    color: $grey;
+  }
+  h3 {
+    a {
+      padding: 0 0.5rem;
+    }
+    a:hover {
+      color: $primary_color;
+      letter-spacing: 1px;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    h3 {
+      padding-top: 1.5rem;
+    }
+  }
+}
+
+
+// media query for navigation-----------------------------
+
+  @media (max-width: 900px) {
+    // navbar starts-----------
+
+    .ib_navbar {
+      //  main menu
+      .ib_menu {
+        background-color: transparent !important;
+
+        width: 100% !important;
+
+        // menu item
+        #menu_item {
+          background-color: rgba(5, 70, 79, 0.777);
+
+          li {
+            padding: 0.7rem 0;
+          }
+        }
+      }
+    }
+  }

@@ -1,18 +1,22 @@
+
+
+// hamburger menu--------------------------
+
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+
+
 // window on scroll function  for sticky navbar----
 
 window.onscroll = function () {
   scrollFunction();
 };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 10) {
-    document.getElementById("navbar").style.top = "0px";
-  } else {
-    document.getElementById("navbar").style.top = "-20px";
-  }
-}
 
-let nav = document.getElementById("navbar");
+let nav = document.getElementById("navbar")
+
 function scrollFunction() {
   if (
     document.body.scrollTop > 200 ||
@@ -22,18 +26,14 @@ function scrollFunction() {
     nav.style.boxShadow = "0 5px 20px 0 rgba(0, 0, 0, .2)";
     nav.style.backgroundColor = "#121212";
   } else {
-    document
-      .getElementById("navbar")
-      .setAttribute("style", "position: fixed; boxShadow:0; top:0px");
+   
+      nav.setAttribute("style", "position: fixed; boxShadow:0; top:0px");
   }
 }
 
 
-// hamburger menu function--------------------------
 
-function myFunction(x) {
-  x.classList.toggle("change");
-}
+
 
 // toggle menu =============================
 let hamIcon = document.getElementById("ham_icon");
@@ -65,8 +65,24 @@ hamIcon.addEventListener("click", function () {
 
   // form reset function
 
-  function myFunction() {
-    document.getElementById("myForm").reset();
-  }
+  // function myFunction() {
+  //   document.getElementById("myForm").reset();
+  // }
 
-  
+  // <!-- navigation starts from here -->
+ 
+  //   <nav class="flex_box" id="ib_navbar">
+  //     <!-- logo -->
+  //     <div class="logo flex_box">
+  //       <a href="home"> <img src="img/logo.png" alt="logo-img" /></a>
+  //     </div>
+
+  //      <span class="span">Evernote Blog</span>
+   
+  //     <!-- hamburger icon -->
+  //     <div class="container" id="ham_icon" onclick="myFunction(this)">
+  //       <div class="bar1"></div>
+  //       <div class="bar2"></div>
+  //       <div class="bar3"></div>
+  //     </div>
+  //   </nav>

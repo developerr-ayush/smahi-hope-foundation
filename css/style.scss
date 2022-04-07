@@ -8,7 +8,7 @@ $primary_color: #2fc3b4;
 $black_color: #151516ee;
 $grey: #7b7b7b;
 $dark_grey: #121212;
-$light_grey: #f3f1f1b1;
+$light_grey: #dff8f2b1;
 $white: #ffffff;
 $dark_blue: #0f1c27;
 $yellow_color: #EEB609;
@@ -18,8 +18,7 @@ $blue: #0c151d;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-
-  font-family: 'Poppins', sans-serif;
+   font-family: 'Poppins', sans-serif;
 }
 
 * a {
@@ -142,8 +141,8 @@ button:hover {
 #navbar {
   width: 100%;
   padding: 1rem 4rem;
-  z-index: 99;
-  transition: top 0.3s;
+  z-index: 999;
+  transition: top 1s;
   position: fixed;
   top: 0;
   left: 0;
@@ -191,6 +190,7 @@ button:hover {
     url(../img/home.png) no-repeat scroll center top;
   background-size: cover;
   padding: 27% 0%;
+  
   @media (max-width:767px) {
     &{
       padding: 100% 0%;
@@ -635,5 +635,6 @@ button:hover {
 @import "hamburger";
 @import "contact";
 @import "joinUs";
+@import "ib";
 @import "blog";
 
